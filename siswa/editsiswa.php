@@ -12,13 +12,13 @@
     <title>Siakad | webDev school</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -43,9 +43,10 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="../index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
+                    
             </li>
 
             <!-- Divider -->
@@ -64,7 +65,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="siswa/siswa.php">Siswa</a>
+                        <a class="collapse-item" href="../siswa/siswa.php">Siswa</a>
                         <a class="collapse-item" href="cards.html">Kelas</a>
                         <a class="collapse-item" href="cards.html">Jurusan</a>
                     </div>
@@ -139,7 +140,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -160,61 +161,25 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-700">Edit Siswa SMKN 1 CIOMAS</h1>
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Selamat Datang</h1>
-                    <h3>Aplikasi Siakad | WebDev School</h3>
+                    <form action="">
+                    <label for="Nama" class="form-label">Nama Siswa</label>
+                    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                    <label for="NISN" class="form-label">NISN</label>
+                    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                     <br>
-                    <div class="row">
-                     <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Siswa</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Kelas</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Data Jurusan</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                    <select class="form-control form-control mb-3" aria-label="Large select example">
+                        <option selected>Jenis Kelamin</option>
+                        <option value="1">Laki-Laki</option>
+                        <option value="2">Perempuan</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    </form>
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -223,13 +188,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Siakad | WebDevSchool</span>
-                    </div>
-                </div>
-            </footer>
+           
             <!-- End of Footer -->
 
         </div>
@@ -264,14 +223,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
 </body>
 

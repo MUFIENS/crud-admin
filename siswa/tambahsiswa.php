@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../index.phpl">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -139,7 +139,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -170,7 +170,7 @@
                     <label for="email" class="form-label">Email</label>
                     <input type="email" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                     <br>
-                    <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                    <select class="form-control form-control mb-3" aria-label="Large select example">
                         <option selected>Jenis Kelamin</option>
                         <option value="1">Laki-Laki</option>
                         <option value="2">Perempuan</option>

@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -139,7 +139,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -194,7 +194,7 @@
                                             <td>didin@gmail.com</td>
                                             <td>pria</td>
                                             <td>
-                                                <a href="#" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                                <a href="editsiswa.php" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
                                                 <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                                         </tr>
 
