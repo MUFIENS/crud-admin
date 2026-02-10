@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -185,18 +189,27 @@
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
-                                    
-                                    <tbody>
+                                    <?php
+                                    include '../db.php';
+                                    $i = 1;
+                                    $data = mysqli_query($koneksi, "SELECT * FROM siswa");
+                                    while($d = mysqli_fetch_array($data)){
+                                        ?>
+                                        <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Didin Wahyudi </td>
-                                            <td>1234567</td>
-                                            <td>didin@gmail.com</td>
-                                            <td>pria</td>
+                                            <td><?php echo $i++; ?></td>
+                                            <td><?php echo $d['nama']; ?></td>
+                                            <td><?php echo $d['nisn']; ?></td>
+                                            <td><?php echo $d['email']; ?></td>
+                                            <td><?php echo $d['jk']; ?></td>
                                             <td>
                                                 <a href="editsiswa.php" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
                                                 <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                                         </tr>
+                                        <?php
+                                    }
+                                    ?>
+                                        </tbody>
 
 
                 </div>
